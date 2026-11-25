@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ADKDon | an ADKDon Production</title>
+<meta name="description" content="ADKDon is an Adirondack film and video production company. The signature end card — an ADKDon Production — marks the work, including pictures released under DKF69FILMS.">
+<link rel="canonical" href="https://adkdon.com/">
+<meta name="robots" content="noindex, nofollow">
+<meta name="author" content="ADKDon">
+<meta name="theme-color" content="#0C1612">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ADKDon">
+<meta property="og:title" content="ADKDon | an ADKDon Production">
+<meta property="og:description" content="Film and video from the Adirondacks. An ADKDon Production.">
+<meta property="og:url" content="https://adkdon.com/">
+<meta property="og:image" content="https://adkdon.com/apple-touch-icon.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0c1612;
+    --bg-2: #13201a;
+    --cream: #efe6d2;
+    --mist: #c5d4c6;
+    --pine: #2a4a3a;
+    --copper: #c4a06a;
+    --muted: #9aaf9c;
+    --line: #2a3d33;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(ellipse 80% 50% at 50% 0%, #173126 0%, var(--bg) 55%);
+    color: var(--cream);
+    font: 18px/1.55 "Source Sans 3", "Source Sans Pro", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  a { color: var(--copper); text-decoration-color: rgba(196,160,106,0.45); text-underline-offset: 3px; }
+  a:hover { color: var(--cream); }
+  a:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
+  .skip {
+    position: absolute; left: -999px; top: 0;
+    background: var(--copper); color: var(--bg); padding: 8px 12px; z-index: 10;
+  }
+  .skip:focus { left: 16px; top: 12px; }
+  header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 28px clamp(22px, 5vw, 72px) 0;
+  }
+  nav { display: flex; gap: 8px 28px; font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; }
+  nav a { color: var(--muted); text-decoration: none; padding: 8px 0 2px; border-bottom: 1px solid transparent; }
+  nav a:hover { color: var(--cream); border-bottom-color: var(--copper); }
+  .hero {
+    min-height: calc(100svh - 88px);
+    min-height: calc(100vh - 88px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px 24px 80px;
+  }
+  .logo { width: min(520px, 86vw); height: auto; display: block; margin: 0 auto; }
+  .credit {
+    margin: 10px 0 0;
+    font-family: "Cormorant Garamond", "Palatino Linotype", Palatino, serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(1.6rem, 4vw, 2.35rem);
+    letter-spacing: 0.02em;
+    color: var(--cream);
+  }
+  .tag {
+    margin: 22px 0 0;
+    max-width: 28em;
+    color: var(--mist);
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+  }
+  .rule {
+    width: min(200px, 40vw);
+    height: 1px;
+    background: var(--copper);
+    margin: 28px auto 0;
+    border: 0;
+  }
+  main {
+    width: min(860px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 0 0 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px 64px;
+    border-top: 1px solid var(--line);
+    padding-top: 56px;
+  }
+  h2 {
+    margin: 0 0 16px;
+    font-family: "Cormorant Garamond", "Palatino Linotype", Palatino, serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: 0.02em;
+    color: var(--cream);
+  }
+  main p { margin: 0 0 1em; color: var(--mist); }
+  main p:last-child { margin-bottom: 0; }
+  .contact a { font-family: "Cormorant Garamond", serif; font-size: 1.45rem; font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(196,160,106,0.6); }
+  footer {
+    width: min(860px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 20px 0 40px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px 32px;
+    flex-wrap: wrap;
+    font-size: 0.74rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  footer a { color: var(--muted); text-decoration: none; border-bottom: 1px solid rgba(196,160,106,0.5); padding-bottom: 1px; }
+  footer a:hover { color: var(--cream); }
+  @media (max-width: 700px) {
+    header { justify-content: center; }
+    .hero { min-height: 78svh; padding-bottom: 48px; }
+    main { grid-template-columns: 1fr; gap: 36px; padding-top: 40px; }
+  }
+</style>
+</head>
+<body>
+  <a class="skip" href="#about">Skip to about</a>
+  <header>
+    <nav aria-label="Page">
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div class="hero">
+    <img class="logo" src="logo.svg" width="800" height="220" alt="ADKDon">
+    <p class="credit">an ADKDon Production</p>
+    <hr class="rule">
+    <p class="tag">Film and video from the Adirondacks.</p>
+  </div>
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>ADKDon is a production company in the Adirondacks. The name you see at the end of the picture &mdash; <em>an ADKDon Production</em> &mdash; is the signature on the work.</p>
+      <p>Films and transfers, including the 1985 Saranac Lake JV football season and SCL marching band performances, are released under the <a href="https://dkf69films.com/">DKF69FILMS</a> label.</p>
+    </section>
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p><a href="mailto:admin@adkdon.com">admin@adkdon.com</a></p>
+    </section>
+  </main>
+  <footer>
+    <span>ADKDon</span>
+    <a href="https://plinymiller.com/">a plinymiller design</a>
+  </footer>
+</body>
+</html>
